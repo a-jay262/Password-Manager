@@ -9,6 +9,14 @@ const Home = () => {
     // Redirect to the new page defined in router
     navigate("/library"); // Redirect to the Password Library page
   };
+  const handleClick2 = () => {
+    // Redirect to the new page defined in router
+    navigate("/generator"); // Redirect to the Password Generator page
+  };
+  const handleClick3 = () => {
+    // Redirect to the new page defined in router
+    navigate("/customize"); // Redirect to the Password Generator page
+  };
 
   return (
     <div
@@ -30,7 +38,7 @@ const Home = () => {
       </h1>
       <div className="row">
         <div className="col-md-4">
-          <div className="card mb-4">
+          <div className="card mb-4" onClick={handleClick2}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <h5 className="card-title mb-3">Generate Password</h5>
               <p className="card-text text-center">
@@ -41,7 +49,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card mb-4">
+          <div className="card mb-4" onClick={handleClick3}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <h5 className="card-title mb-3">Customize Password</h5>
               <p className="card-text text-center">
