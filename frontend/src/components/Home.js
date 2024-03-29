@@ -7,7 +7,7 @@ const Home = () => {
 
   const handleClick = () => {
     // Redirect to the new page defined in router
-    navigate("/library"); // Redirect to the Password Library page
+    navigate("/loginsignup"); // Redirect to the Password Library page
   };
   const handleClick2 = () => {
     // Redirect to the new page defined in router
